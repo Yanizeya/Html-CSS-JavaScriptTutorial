@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
   <head>
     <title>HTML_tutorial</title>
     <meta charset="utf-8">
@@ -11,13 +10,22 @@
 
   <body>
     <a href = "web.html">  <h1>WEB</h1> </a>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('a').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('a').style.color = 'black';
+    ">
     <div id="grid">
       <ol>
-          <li> <a href="html.html" > HTML </a> <br>
+          <li> <a href="html.html"> HTML </a> <br>
           <li> <a href="css.html" > CSS </a> <br>
           <li> <a href="javaScript.html"> JavaScript </a> <br>
       </ol>
-      <div id="article">
         <p>
           <h2>CSS</h2>
           The World Wide Web (abbreviated WWW or the Web) is an information space where documents
@@ -27,7 +35,6 @@
           The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991
           and to the general public on the Internet in August 1991.
         </p>
-      </div>
     </div>
   </body>
 </html>

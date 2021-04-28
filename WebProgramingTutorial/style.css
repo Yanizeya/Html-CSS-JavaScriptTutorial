@@ -17,20 +17,21 @@
     padding:20px;
   }
 
-    #grid ol{
-    border-right:3px solid gray;
-    margin:0;
-    width:100px;
-    padding:40px;
-    padding-left: :40px;
-  }
+
     #grid{
     display : grid;
     grid-template-columns: 200px 2fr;
-  }
+    }
+
+    #grid ol{
+    border-right:3px solid white;
+    margin:0;
+    padding:40px;
+    }
+
     #article{
     padding-left: 20px;
-  }
+    }
 }
 
 </style>
