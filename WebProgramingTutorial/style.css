@@ -2,11 +2,6 @@
   body{
     margin:0;
   }
-  a{
-    text-decoration: none;
-    color : black;
-    font-size:20px;
-  }
 
   @media(min-width:800px){
     h1{
@@ -23,12 +18,18 @@
     grid-template-columns: 200px 2fr;
     }
 
-    #grid ol{
-    border-right:3px solid white;
-    margin:0;
-    padding:40px;
+    #grid #left{
+    border-right:2px solid gray;
     }
-
+    #grid #right{
+    margin-left: 15px;
+    }
+    #grid input{
+      width : 60px;
+      font-size : 20px;
+      margin-left : 20px;
+      margin-top  : 10px;
+    }
     #article{
     padding-left: 20px;
     }
