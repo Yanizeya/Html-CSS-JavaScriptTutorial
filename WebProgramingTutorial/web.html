@@ -6,6 +6,30 @@
     <meta charset="utf-8">
 
     <link rel = "stylesheet" href = "style.css">
+    <script>
+    function nightDayHandle(self){
+    var target = document.querySelector('body');
+    var alist = document.querySelectorAll('a');
+
+    if(self.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'day';
+      for(var i=0; i<alist.length; i++){
+      alist[i].style.color = 'powderblue';
+      }
+    }
+    else{
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'night';
+      for(var i=0; i<alist.length; i++){
+      alist[i].style.color = 'blue';
+      }
+    }
+  }
+  </script>
+
   </head>
 
   <body>
@@ -13,14 +37,8 @@
 
     <div id = "grid">
       <div id= "left">
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        ">
+          <input type="button" value='night' onclick="
+          nightDayHandle(this)">
         <ol>
             <li> <a href="html.html"> HTML </a> <br>
             <li> <a href="css.html" > CSS </a> <br>
