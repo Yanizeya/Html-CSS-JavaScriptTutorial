@@ -6,29 +6,8 @@
     <meta charset="utf-8">
 
     <link rel = "stylesheet" href = "style.css">
-    <script>
-    function nightDayHandle(self){
-    var target = document.querySelector('body');
-    var alist = document.querySelectorAll('a');
-
-    if(self.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = 'day';
-      for(var i=0; i<alist.length; i++){
-      alist[i].style.color = 'powderblue';
-      }
-    }
-    else{
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = 'night';
-      for(var i=0; i<alist.length; i++){
-      alist[i].style.color = 'blue';
-      }
-    }
-  }
-  </script>
+    <script src="colors.js">
+    </script>
 
   </head>
 
@@ -46,7 +25,7 @@
         </ol>
     </div>
       <div id= "right">
-            <h2>CSS</h2>
+            <h2>Web</h2>
             <p>
             The World Wide Web (abbreviated WWW or the Web) is an information space where documents
             and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links,
