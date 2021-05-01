@@ -1,38 +1,37 @@
-<style>
-  body{
-    margin:0;
-  }
 
-  @media(min-width:800px){
-    h1{
-    font-size:60px;
-    text-align: center;
-    border-bottom: 3px solid gray;
-    margin:0;
-    padding:20px;
-  }
-
-
-    #grid{
-    display : grid;
-    grid-template-columns: 200px 2fr;
-    }
-
-    #grid #left{
-    border-right:2px solid gray;
-    }
-    #grid #right{
-    margin-left: 15px;
-    }
-    #grid input{
-      width : 60px;
-      font-size : 20px;
-      margin-left : 20px;
-      margin-top  : 10px;
-    }
-    #article{
-    padding-left: 20px;
-    }
+body{
+  margin:0;
 }
 
-</style>
+@media(min-width:800px){
+  h1{
+  font-size:60px;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  margin:0;
+  padding:20px;
+}
+
+
+  #grid{
+  display : grid;
+  grid-template-columns: 200px 2fr;
+  }
+
+  #grid #left{
+  border-right:2px solid gray;
+  }
+  #grid #right{
+  margin-left: 15px;
+  }
+  #grid input{
+    width : 60px;
+    font-size : 20px;
+    margin-left : 20px;
+    margin-top  : 10px;
+  }
+  #article{
+  padding-left: 20px;
+  }
+}
+
