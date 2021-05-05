@@ -7,9 +7,19 @@
 
   <body>
     <script>
-      var mycar = new Car();
-      mycar.make = "Eagggle";
-      console.log(mycar.make);
+      function Car(make, model, year, owner) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.owner = owner;
+      }
+      const car = new Car("eagel", "talon", 1993);
+
+      // var o = {
+      //   a: 7,
+      //   get b() {return this.a + 1;},
+      //   set c(x) {this.a = x / 2}
+      // };
 
     </script>
 
