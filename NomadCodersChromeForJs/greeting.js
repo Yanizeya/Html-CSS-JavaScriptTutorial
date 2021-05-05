@@ -4,22 +4,41 @@ const form = document.querySelector(".js-form"),
 
 const USER_LS = "currentUser",
   SHOWING_CN = "showing";
+
 function paintGreeting(text){
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
   greeting.innerText = `hello ${text}`
 }
+
+function saveName(text){
+  localStorage.setItem(USER_LS, text);
+}
+function handleSubmit(event){
+    event.preventDefault();
+    console.log(input.value);
+    const currentValue = input.value;
+    paintGreeting(currentValue);
+    saveName(currentValue);
+}
+
+function askForName(){
+  form.classList.add(SHOWING_CN);
+  form.addEventListener("submit", handleSubmit);
+}
+
 function loadName(){
   const currentUser = localStorage.getItem(USER_LS);
+  console.log(currentUser);
   if(currentUser === null){
-
+    askForName();
   } else{
     paintGreeting(currentUser);
   }
 }
 
 function init(){
-
+  loadName();
 }
 
 init();

@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<html>
+<head>
+  <title>Something</title>
+  <link rel="stylesheet" href="index.css">
   </head>
-
   <body>
+    <div class="js-clock">
+    <h1>00:00</h1>
+    </div>
+      <input type = "text" placeholder = "What is your name?" />
+    <h4 class = "js-greetings greetings"></h4>
+
     <script>
-      function Car(make, model, year, owner) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.owner = owner;
-      }
-      const car = new Car("eagel", "talon", 1993);
-
-      // var o = {
-      //   a: 7,
-      //   get b() {return this.a + 1;},
-      //   set c(x) {this.a = x / 2}
-      // };
-
+        function handleSubmit(event){
+            event.preventDefault();
+            console.log(document.querySelector("input").value);
+        }
     </script>
-
+    <script>
+        const input = document.querySelector("input");
+        input.addEventListener("submit", handleSubmit);
+    </script>
   </body>
-</html>
+  </html>
