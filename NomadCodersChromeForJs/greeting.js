@@ -12,9 +12,11 @@ function paintGreeting(text){
 }
 
 function saveName(text){
+  console.log("currenttext :"+text);
   localStorage.setItem(USER_LS, text);
 }
 function handleSubmit(event){
+    console.log("handleSubmit()!");
     event.preventDefault();
     console.log(input.value);
     const currentValue = input.value;
@@ -29,7 +31,6 @@ function askForName(){
 
 function loadName(){
   const currentUser = localStorage.getItem(USER_LS);
-  console.log(currentUser);
   if(currentUser === null){
     askForName();
   } else{
