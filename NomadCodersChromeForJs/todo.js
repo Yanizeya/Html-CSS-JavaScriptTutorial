@@ -2,10 +2,23 @@ const toDoForm = document.querySelector(".js-toDoForm"),
   toDoInput = toDoForm.querySelector("input"),
   toDoList = document.querySelector(".js-toDoList");
 
-  const toDos = [];
+  let toDos = [];
+
+  
+
+  function cleantoDos(){
+
+  }
 
   function deleteToDo(event){
-    console.log(event);
+    const btn = event.target;
+    const li = btn.parentNode;
+    toDoList.removeChild(li);
+    const cleanToDos = toDos.filter(function(toDo){
+      return toDo.id !== parseInt(li.id);
+    });
+    toDos = cleanToDos;
+    saveToDos();
   }
 
 function saveToDos(){
